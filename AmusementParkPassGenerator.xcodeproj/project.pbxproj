@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A803670F21417773006A21E1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803670E21417773006A21E1 /* Enums.swift */; };
+		A80FDD482147DF1800983BF2 /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80FDD472147DF1800983BF2 /* Pass.swift */; };
+		A8CF54112145DFAD00C4F02A /* PassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF54102145DFAD00C4F02A /* PassViewController.swift */; };
+		A8FB52F2214290B900A335DB /* AccessDenied.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FB52F0214290B900A335DB /* AccessDenied.wav */; };
+		A8FB52F3214290B900A335DB /* AccessGranted.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8FB52F1214290B900A335DB /* AccessGranted.wav */; };
+		A8FB52F5214290E400A335DB /* FaceImageAsset.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FB52F4214290E400A335DB /* FaceImageAsset.png */; };
+		A8FB52F72142B42D00A335DB /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB52F62142B42D00A335DB /* Vendor.swift */; };
+		A8FB52F92142C39100A335DB /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB52F82142C39100A335DB /* Tests.swift */; };
 		C9E78451213C2C68003B55A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E78450213C2C68003B55A1 /* AppDelegate.swift */; };
-		C9E78453213C2C68003B55A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E78452213C2C68003B55A1 /* ViewController.swift */; };
+		C9E78453213C2C68003B55A1 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E78452213C2C68003B55A1 /* FormViewController.swift */; };
 		C9E78456213C2C68003B55A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E78454213C2C68003B55A1 /* Main.storyboard */; };
 		C9E78458213C2C69003B55A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E78457213C2C69003B55A1 /* Assets.xcassets */; };
 		C9E7845B213C2C69003B55A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E78459213C2C69003B55A1 /* LaunchScreen.storyboard */; };
@@ -35,9 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A803670E21417773006A21E1 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A80FDD472147DF1800983BF2 /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
+		A8CF54102145DFAD00C4F02A /* PassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewController.swift; sourceTree = "<group>"; };
+		A8FB52F0214290B900A335DB /* AccessDenied.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AccessDenied.wav; sourceTree = "<group>"; };
+		A8FB52F1214290B900A335DB /* AccessGranted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AccessGranted.wav; sourceTree = "<group>"; };
+		A8FB52F4214290E400A335DB /* FaceImageAsset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceImageAsset.png; sourceTree = "<group>"; };
+		A8FB52F62142B42D00A335DB /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
+		A8FB52F82142C39100A335DB /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		C9E7844D213C2C68003B55A1 /* AmusementParkPassGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmusementParkPassGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E78450213C2C68003B55A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9E78452213C2C68003B55A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9E78452213C2C68003B55A1 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		C9E78455213C2C68003B55A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9E78457213C2C69003B55A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E7845A213C2C69003B55A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8FB52EE2142901B00A335DB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB52F0214290B900A335DB /* AccessDenied.wav */,
+				A8FB52F1214290B900A335DB /* AccessGranted.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A8FB52EF2142905800A335DB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB52F4214290E400A335DB /* FaceImageAsset.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		C9E78444213C2C67003B55A1 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +128,14 @@
 		C9E7844F213C2C68003B55A1 /* AmusementParkPassGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				A8FB52EF2142905800A335DB /* Image */,
+				A8FB52EE2142901B00A335DB /* Audio */,
 				C9E78480213C9073003B55A1 /* Model */,
 				C9E78450213C2C68003B55A1 /* AppDelegate.swift */,
-				C9E78452213C2C68003B55A1 /* ViewController.swift */,
+				C9E78452213C2C68003B55A1 /* FormViewController.swift */,
+				A8CF54102145DFAD00C4F02A /* PassViewController.swift */,
+				A803670E21417773006A21E1 /* Enums.swift */,
+				A8FB52F82142C39100A335DB /* Tests.swift */,
 				C9E78454213C2C68003B55A1 /* Main.storyboard */,
 				C9E78457213C2C69003B55A1 /* Assets.xcassets */,
 				C9E78459213C2C69003B55A1 /* LaunchScreen.storyboard */,
@@ -112,6 +150,8 @@
 				C9E78483213C933E003B55A1 /* Entrant.swift */,
 				C9E78485213C969E003B55A1 /* Guest.swift */,
 				C9E78487213C96AE003B55A1 /* Employee.swift */,
+				A8FB52F62142B42D00A335DB /* Vendor.swift */,
+				A80FDD472147DF1800983BF2 /* Pass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,8 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E7845B213C2C69003B55A1 /* LaunchScreen.storyboard in Resources */,
+				A8FB52F3214290B900A335DB /* AccessGranted.wav in Resources */,
 				C9E78458213C2C69003B55A1 /* Assets.xcassets in Resources */,
 				C9E78456213C2C68003B55A1 /* Main.storyboard in Resources */,
+				A8FB52F2214290B900A335DB /* AccessDenied.wav in Resources */,
+				A8FB52F5214290E400A335DB /* FaceImageAsset.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +291,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E78484213C933E003B55A1 /* Entrant.swift in Sources */,
-				C9E78453213C2C68003B55A1 /* ViewController.swift in Sources */,
+				A8FB52F92142C39100A335DB /* Tests.swift in Sources */,
+				A8FB52F72142B42D00A335DB /* Vendor.swift in Sources */,
+				C9E78453213C2C68003B55A1 /* FormViewController.swift in Sources */,
 				C9E78486213C969E003B55A1 /* Guest.swift in Sources */,
 				C9E78488213C96AE003B55A1 /* Employee.swift in Sources */,
+				A8CF54112145DFAD00C4F02A /* PassViewController.swift in Sources */,
+				A803670F21417773006A21E1 /* Enums.swift in Sources */,
+				A80FDD482147DF1800983BF2 /* Pass.swift in Sources */,
 				C9E78451213C2C68003B55A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
